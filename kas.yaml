@@ -1,0 +1,20 @@
+header:
+  version: 18
+
+machine: qemux86-64
+distro: poky
+target: my-image
+
+repos:
+  my-layer:
+    layers:
+      meta-my-layer:
+
+  poky:
+    url: https://git.yoctoproject.org/poky.git
+    tag: styhead-5.1.4
+    commit: 70dc28ac287bf35541270cae1d99130a0f6b7b5f
+    layers:
+      meta:
+      meta-poky:
+      meta-yocto-bsp:
